@@ -7,7 +7,7 @@ The first problem is to implement Linear Regression using Gradient Descent from 
 #### Part 2 
 The second part is a classic binary classification problem. 
 The first step is to generate random points to be classified. After generating those, a line that will classify the points into two classes is needed. For that, keep changing the values of X,Y and slope of line which clasifies the points into 2 classes. When a line giving least misclassification is obtained, the updation of parameters to find new lines can be stopped. 
-
+![Output of Binary Classification](https://github.com/prajakta0111/Applied_Machine_Learning/blob/master/images/binary.PNG)
 ## [01_data_processing_modelling.ipynb](https://github.com/prajakta0111/Applied_Machine_Learning/blob/master/01_data_processing_modelling.ipynb)
 #### Part 1
 This notebook implements data preprocessing for the given dataset and fits a regression model on it. 
@@ -22,10 +22,13 @@ One hot encoding for categorical variables
 Once these steps are done, a baselie regression model is fit which yields an accuracy of 81%
 
 In order to improve the accuracy, experimenting with the hyperparameters is done. Rather than using lambda value chosen by default by the sklearn method, a set of varying lambda values is given to the function so as to see which lambda value is better in terms of higher accuracy. 
-The best accuracy is achieved at accuracy of 84.1% with threshold =  0.99 and regularization coefficient = 100.0
+![lambda](https://github.com/prajakta0111/Applied_Machine_Learning/blob/master/images/lambda.PNG)
+
+The best accuracy for test set is achieved at accuracy of 84.1% with threshold =  0.99 and regularization coefficient = 100.0
 
 #### Part 2 
 This part is mainly to understand how the degree of polnomial affects the fit of a model on a dataset. The aim was to generate datapoints with a distribution of various degrees and fitting a polynomial while experimenting with different fits to understand the phenomenon of over/under fitting.
+![poly](https://github.com/prajakta0111/Applied_Machine_Learning/blob/master/images/poly.PNG)
 
 ## [02_NN_scratch.ipynb](https://github.com/prajakta0111/Applied_Machine_Learning/blob/master/02_NN_scratch.ipynb)
 The aim is to build a neural network from scratch having the following architecture:
@@ -42,6 +45,8 @@ Dropout with a value of 0.2
 
 Output layer, using softmax as the activation function
 
+The architecture is initialized as follows:
+![nn](https://github.com/prajakta0111/Applied_Machine_Learning/blob/master/images/nn.PNG)
 A 5 fold cross validation yields the best accuracy at 54%
 
 ## [03_EDA_Feature.ipynb](https://github.com/prajakta0111/Applied_Machine_Learning/blob/master/03_EDA_Feature.ipynb)
